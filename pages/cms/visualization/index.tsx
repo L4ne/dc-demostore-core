@@ -8,7 +8,7 @@ export async function getServerSideProps(context: GetServerSidePropsContext) {
   const {
     content: contentId
   } = context.query;
-  
+
   const data = await fetchStandardPageData({
     content: {
       content: { id: contentId as string }
