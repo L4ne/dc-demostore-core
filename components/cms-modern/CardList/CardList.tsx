@@ -15,7 +15,7 @@ const styles = (theme: Theme) => ({
 interface CardListProps extends WithStyles<typeof styles> {
     className?: string;
     header?: string;
-    align?: string;
+    align?: 'left' | 'right' | 'center';
     cards?: CmsContent[];
 }
 
