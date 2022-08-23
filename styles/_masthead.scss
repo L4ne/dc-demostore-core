@@ -19,11 +19,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding-top: 22px;
-    padding-bottom: 15px;
-    padding-right: 40px;
-    padding-left: 40px;
-    height: 75px;
+    padding: 10px 40px;
+
     &__logo {
         display: flex;
         height: 38px;
