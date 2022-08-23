@@ -14,20 +14,14 @@ const styles = (theme: Theme) => ({
 
 interface CardListProps extends WithStyles<typeof styles> {
     className?: string;
-
-    /**
-     * Card List Header
-     */
     header?: string;
-
-    /**
-     * List of Cards
-     */
+    align?: string;
     cards?: CmsContent[];
 }
 
 const CardList: React.FC<CardListProps> = ({
   header,
+  align = 'left',
   cards = [],
   classes
 }) => {
@@ -40,7 +34,7 @@ const CardList: React.FC<CardListProps> = ({
       <Box data-testid="CardList" className={classes.root}>
       {
           header && (
-              <Typography variant="h2" component="h2">
+              <Typography variant="h2" component="h2" align={align}>
                   {header}
               </Typography>
           )
