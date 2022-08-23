@@ -11,12 +11,12 @@
         display: flex;
         padding: 0;
         flex-wrap: none;
-        border-left: 1px solid $textColor;
-        border-right: 1px solid $textColor;
+        //border-left: 1px solid $textColor;
+        //border-right: 1px solid $textColor;
         list-style: none;
         &__item {
             height: 100%;
-            
+
             &__link {
                 display: flex;
                 align-items: center;
@@ -24,7 +24,9 @@
                 padding: 0 42.5px;
                 text-decoration: none;
                 text-transform: uppercase;
-                color: $white;
+                color: #092a5e;
+                font-weight: 700;
+                white-space: nowrap;
                 @media (max-width: $breakpoint-sm) {
                     padding: 0 15px;
                 }
@@ -95,7 +97,7 @@
                             }
                             &__section {
                                 li {
-                                    padding:8px 0 
+                                    padding:8px 0
                                 }
                             }
                         }
@@ -128,10 +130,10 @@
                                 height: 50px;
                                 border-bottom: 1px solid $textColor;
                                 color: $white;
-                                display: flex; 
+                                display: flex;
                                 align-items: center;
                                 &__link {
-                                    font-size: 14px; 
+                                    font-size: 14px;
                                     text-decoration: none;
                                     color: $white;
                                 }

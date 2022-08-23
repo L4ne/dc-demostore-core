@@ -22,7 +22,7 @@ interface Props {
 }
 
 const Masthead: FC<Props> = ({ children, variant = 'default', logo, navigationBackgroundColor }) => {
-    
+
     const {
         openModal
     } = useUI();
@@ -100,10 +100,10 @@ const Masthead: FC<Props> = ({ children, variant = 'default', logo, navigationBa
     return (
         <NavigationToggleState>
             <a id="top" />
-            <section className="af-banner-top">
-                { locale === "de-DE" ? 'Profitieren Sie von 10% Rabatt auf Ihren ersten Einkauf mit dem Code FIRST10 an der Kasse - es gelten die AGB'
-                    : 'Enjoy 10% off your first purchase using code FIRST10 at checkout - T&Cs apply' }
-            </section>
+            {/*<section className="af-banner-top">*/}
+            {/*    { locale === "de-DE" ? 'Profitieren Sie von 10% Rabatt auf Ihren ersten Einkauf mit dem Code FIRST10 an der Kasse - es gelten die AGB'*/}
+            {/*        : 'Enjoy 10% off your first purchase using code FIRST10 at checkout - T&Cs apply' }*/}
+            {/*</section>*/}
             <section className="af-banner">
               <section className="af-banner__currency-selector">
                 <span onClick={handleShowLocaleModal}>
