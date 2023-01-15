@@ -59,6 +59,11 @@ export default class MyDocument extends Document {
             integrity="sha256-t2ATOGCtAIZNnzER679jwcFcKYfLlw01gli6F6oszk8="
             crossOrigin="anonymous" />
           { /* end algolia instantsearch */}
+
+          <div id="fb-root"></div>
+          <script async defer crossOrigin="anonymous"
+                  src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v15.0" nonce="vSgwc5fk"></script>
+
         </Head>
         <body>
           <Main />
