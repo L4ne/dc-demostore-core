@@ -26,8 +26,8 @@ import LocalizedBannerSlot      from '@components/cms-modern/LocalizedBannerSlot
 import PersonalizedBannerSlot   from '@components/cms-modern/PersonalizedBannerSlot';
 import ProductGrid              from '@components/cms/ProductGrid';
 import ProductContent           from '@components/cms-modern/ProductContent';
-import ShoppableImage           from '@components/cms-modern/ShoppableImage';
-import ShoppableVideo           from '@components/cms-modern/ShoppableVideo';
+import ShoppableImage           from '@components/cms-modern/Shoppable/image/image';
+import ShoppableVideo           from '@components/cms-modern/Shoppable/video/video';
 import SimpleBanner             from '@components/cms-modern/SimpleBanner';
 import Slider                   from '@components/cms-modern/Slider';
 import SplitBlock               from '@components/cms-modern/SplitBlock';
