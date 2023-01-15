@@ -18,7 +18,7 @@ import NProgress from 'nprogress';
 import 'nprogress/nprogress.css';
 
 import ErrorPage from 'next/error';
-import { ConfigContext } from '../components/core/Config';
+import { ConfigContext } from '@components/core/Config';
 
 Router.events.on('routeChangeStart', () => NProgress.start());
 Router.events.on('routeChangeComplete', () => NProgress.done());
@@ -45,7 +45,7 @@ export default class MyApp extends NextApp<AppProps> {
 
     const Layout = (Component as any).Layout || Noop;
 
-    if (pageProps.statusCode) {
+    if (pageProps?.statusCode) {
       return <ErrorPage statusCode={pageProps.statusCode} />;
     }
 
