@@ -1,10 +1,10 @@
 import {
   ShoppableImageHotspot,
   ShoppableImagePolygon
-} from "@Components/dc/molecules/shoppable/shoppableTypes";
+} from "./shoppableTypes";
 
 export const hotspotLink = (
-  hotspot: ShoppableImageHotspot | ShoppableImagePolygon
+  hotspot: { target: string }
 ) => {
   const isExt = hotspot.target.indexOf("http") > -1;
   return `${isExt ? hotspot.target : `/${hotspot.target}`}`;

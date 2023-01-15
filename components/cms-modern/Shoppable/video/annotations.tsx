@@ -13,7 +13,7 @@ import { JoinLine } from "./joinLine";
 import { AnimationCanvas } from "./style";
 
 export interface AnnotationsProps {
-  hotspots: {}[];
+  hotspots: {target: string}[];
   width: number;
   height: number;
   time: number;

@@ -1,7 +1,7 @@
 export type AnnotationsProps = {
   imgProps: {
-    w: number | null;
-    h: number | null;
+    w: number;
+    h: number;
   };
   polygons: unknown[];
   hotspots: unknown[];

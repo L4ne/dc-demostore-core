@@ -35,6 +35,7 @@ export const Annotations = ({
 
   const size = { x: imgProps.w, y: imgProps.h };
 
+  // @ts-ignore
   return !shouldRender ? null : (
     <div
       className="interactive"

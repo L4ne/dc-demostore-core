@@ -1,4 +1,4 @@
-import { ShoppableImagePoint } from "@Components/dc/molecules/shoppable/shoppableTypes";
+import { ShoppableImagePoint } from "./shoppableTypes";
 
 export const getTransformOffset = (
   hotspot: undefined | ShoppableImagePoint,

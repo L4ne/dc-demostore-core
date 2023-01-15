@@ -1,4 +1,4 @@
-import { ShoppableVideoHotspot } from "@Components/dc/molecules/shoppable/shoppableTypes";
+import { ShoppableVideoHotspot } from "../shoppableTypes";
 
 import { interpolatedPoint } from "./interpolatedPoint";
 

@@ -9,17 +9,15 @@ export const Image: FC<ShoppableVideoProps> = (props) => {
   const { hotspots = [], polygons = [], image: imageData } = shoppableImage;
   const [loaded, setLoaded] = useState(false);
   const [imgProps, setImgProps] = useState({
-    w: null,
-    h: null
+    w: 0,
+    h: 0
   });
   const refImg = useRef<HTMLImageElement>(null);
 
   const storeImageProps = () => {
     if (refImg?.current) {
-      setImgProps({
-        w: refImg?.current?.width,
-        h: refImg?.current?.height
-      });
+      // @ts-ignore
+      setImgProps({w: refImg?.current?.width | 0, h: refImg?.current?.height} | 0);
     }
   };
 

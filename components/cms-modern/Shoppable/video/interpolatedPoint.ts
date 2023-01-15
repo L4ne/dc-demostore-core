@@ -1,4 +1,4 @@
-import { ShoppableVideoPoint } from "@Components/dc/molecules/shoppable/shoppableTypes";
+import { ShoppableVideoPoint } from "../shoppableTypes";
 
 export const interpolatedPoint = (
   p1: ShoppableVideoPoint,
